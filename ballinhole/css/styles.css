@@ -1,0 +1,77 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    background-image: url('../img/bg.jpg');
+}
+
+.header-text {
+    background: #a9876c;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #036d1b;
+    box-shadow: 0 1px 23px 3px #000;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+}
+
+#start {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 150px;
+    font-size: 45px;
+    margin: auto;
+    background: #a9876c;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #000;
+}
+
+.game-table {
+    overflow: hidden;
+    position: relative;
+    min-height: 50vh;
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid #00000094;
+    border-radius: 11px;
+    box-shadow: 0 1px 24px -1px inset #000;
+    background: #ffca001c url('../img/bg2.jpg');
+    background-size: contain;
+}
+
+.game-table button {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 200px;
+    height: 150px;
+    font-size: 3em;
+}
+
+.hole, .target {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    background: #896e5b;
+    box-shadow: 0 1px 15px 5px inset #000;
+    border: 1px solid #000;
+}
+
+.target {
+    background: #17ad28;
+    z-index: 1;
+}

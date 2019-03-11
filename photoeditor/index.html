@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Ball in hole</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/sliders.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+    <h1 class="header-text russo-font">PhotoEditor</h1>
+</header>
+
+<form class="center url-form">
+    <input class="url-box" type="url" placeholder="Dodaj inne zdjęcie i edytuj!">
+    <input class="add-image" type="button" value="Prześlij">
+</form>
+
+<div class="sliders">
+    <form id="imageSlidersForm">
+        <p>
+            <label for="gs">Grayscale</label>
+            <input id="gs" name="gs" type="range" min="0" max="100" value="0">
+        </p>
+
+        <p>
+            <label for="blur">Blur</label>
+            <input id="blur" name="blur" type="range" min="0" max="10" value="0">
+        </p>
+
+        <p>
+            <label for="br">Exposure</label>
+            <input id="br" name="br" type="range" min="0" max="200" value="100">
+        </p>
+
+        <p>
+            <label for="ct">Contrast</label>
+            <input id="ct" name="ct" type="range" min="0" max="200" value="100">
+        </p>
+
+        <p>
+            <label for="huer">Hue Rotate</label>
+            <input id="huer" name="huer" type="range" min="0" max="360" value="0">
+        </p>
+
+        <p>
+            <label for="opacity">Opacity</label>
+            <input id="opacity" name="opacity" type="range" min="0" max="100" value="100">
+        </p>
+
+        <p>
+            <label for="invert">Invert</label>
+            <input id="invert" name="invert" type="range" min="0" max="100" value="0">
+        </p>
+
+        <p>
+            <label for="saturate">Saturate</label>
+            <input id="saturate" name="saturate" type="range" min="0" max="500" value="100">
+        </p>
+
+        <p>
+            <label for="sepia">Sepia</label>
+            <input id="sepia" name="sepia" type="range" min="0" max="100" value="0">
+        </p>
+
+        <input type="reset" class="reset" form="imageSlidersForm" id="reset" value="reset"/>
+
+    </form>
+</div>
+
+<div class="image-container center">
+    <img src="http://study4u.eu/pl/images/uczelnie/48/gal-1-80664.jpg">
+</div>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

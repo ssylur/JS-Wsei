@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Wsei notes!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/note.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+    <h1 class="header-text russo-font">Wsei Notes 📝</h1>
+    <input class="input-search" type="text" placeholder="Szukaj..."/>
+</header>
+
+<section class="main">
+    <aside class="sidebar russo-font">
+        <div class="categories js--categories">
+            <ul class="categories__list">
+                <li class="category category--active" data-category="all">Wszystkie</li>
+                <li class="category" data-category="deleted">Usunięte</li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="content">
+        <header class="notes-header">
+            <button class="add-button" type="button">+</button>
+            <div class="new-note">
+                <div class="info">Kliknij + aby dodać notkę</div>
+                <textarea placeholder="Wpisz treść notatki" class="note-area"></textarea>
+            </div>
+        </header>
+        <div class="notes russo-font "></div>
+    </section>
+
+</section>
+
+<script src="js/note.js"></script>
+<script src="js/categories.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

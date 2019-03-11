@@ -1,0 +1,65 @@
+body {
+    background-color: #0065ce;
+    font-family: 'Russo One', sans-serif;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.header-text {
+    margin: 25px 0 25px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.url-form {
+    margin-bottom: 15px;
+}
+
+.url-box {
+    font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    height: 41px;
+    width: 50%;
+    background-color: white;
+    padding: 0;
+    border: 4px solid #ffffff;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: #0065ce;
+}
+
+.add-image, .reset {
+    font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    height: 49px;
+    width: 90px;
+    background-color: white;
+    padding: 0;
+    border: 4px solid #ffffff;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.image-container {
+    padding: 5px;
+    width: 65%;
+    max-width: 600px;
+    float: left;
+    margin: 20px;
+}
+
+.image-container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.p {
+    clear: both;
+    text-align: center;
+    padding:  40px 0 40px;
+}

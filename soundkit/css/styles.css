@@ -1,0 +1,107 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    background: #455A64;
+}
+
+.header {
+    background: #1C313A;
+}
+
+.header-text {
+    color: #FF6D00;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.soundboard {
+    margin: 50px auto;
+    width: 600px;
+    min-height: 300px;
+    box-shadow: 3px 3px 15px -2px #000;
+    background: #718792;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sound-button {
+    width: 140px;
+    height: 140px;
+    margin: 20px 30px;
+    background: #484848;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #000;
+    cursor: pointer;
+    transition: .3s;
+    padding: 40px 0;
+    color: #ffffff21;
+    font-size: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.sound-button.active {
+    box-shadow: 1px 1px 10px 2px #000;
+    color: #ffffffc2;
+}
+
+.sound-button.sound-button--first.active {
+    background: #1dff24;
+}
+
+.sound-button.sound-button--second.active {
+    background: #ffaf1d;
+}
+
+.sound-button.sound-button--third.active {
+    background: #1d24ff;
+}
+
+.sound-button.sound-button--fourth.active {
+    background: #1deaff;
+}
+
+.sound-button.sound-button--fifth.active {
+    background: #ff511d;
+}
+
+.sound-button.sound-button--sixth.active {
+    background: #fff81d;
+}
+
+.sound-button.sound-button--seventh.active {
+    background: #ff1d90;
+}
+
+.sound-button.sound-button--eigth.active {
+    background: #551dff;
+}
+
+.sound-button.sound-button--ninth.active {
+    background: #060313;
+}
+
+.media-container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.media-container button {
+    background: #FFF;
+    color: #718792;
+    font-size: 20px;
+    padding: 15px 20px;
+    border: none;
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.media-container button:disabled {
+    background:#f2f2f2;
+    color:black;
+    cursor: not-allowed;
+}

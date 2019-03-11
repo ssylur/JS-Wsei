@@ -1,0 +1,28 @@
+.notes {
+    padding-top: 15px;
+    border-top: 1px solid #ffb48f;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-note {
+    width: 230px;
+    min-height: 150px;
+    max-height: 350px;
+    padding: 15px;
+    margin: 30px;
+    background: white;
+    box-shadow: 0 3px 11px 0 #00000073;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.single-note .delete-note {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    cursor: pointer;
+}

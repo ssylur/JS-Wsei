@@ -1,0 +1,154 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.russo-font {
+    font-family: 'Russo One', sans-serif;
+}
+
+.header {
+    padding: 15px;
+    background: #f5e6cc;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ffb48f;
+}
+
+.header-text {
+    margin: 0;
+    color: #FFb48f;
+    font-size: 25px;
+    border-right: 1px solid;
+    max-width: 200px;
+    flex: 1;
+    align-self: center;
+    padding: 10px 0;
+}
+
+.input-search {
+    flex: 1;
+    max-width: 600px;
+    align-self: center;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: #fff5de8a;
+}
+
+.sidebar {
+    width: 244px;
+    height: 100%;
+    background: #f5e6cc;
+}
+
+.categories {
+    margin: 15px 0;
+    height: calc(100% - 30px);
+    border-right: 1px solid #ffb48f;
+    padding: 0 15px;
+}
+
+.categories__list {
+    list-style: none;
+    cursor: pointer;
+}
+
+.category {
+    padding: 10px 0;
+    transition: .3s;
+}
+
+.category:hover {
+    color: #f16d4e;
+}
+
+.category.category--active {
+    color: #f16d4e;
+}
+
+.category.category--active:after {
+    content: '🔸';
+    margin: 0 5px;
+}
+
+.content {
+    width: 100%;
+}
+
+.add-button {
+    background: #f16d4e;
+    padding: 15px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    margin: 15px;
+    box-shadow: 1px 2px 8px #0000008c;
+    color: #ffffff;
+    font-size: 37px;
+    text-shadow: 1px 1px 1px #565656;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+.add-button:active {
+    background: #d26248;
+}
+
+.notes-header {
+    display: flex;
+    overflow: hidden;
+}
+
+.new-note {
+    flex: 1;
+}
+
+.new-note .info {
+    width: 481px;
+    margin: 22px 15px;
+    font-size: 15px;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #ffb48f;
+    border: 1px solid #ffb48f;
+    top: 0;
+    opacity: 1;
+    transition: .3s;
+    position: relative;
+}
+
+.new-note .note-area {
+    width: 481px;
+    margin: 0 15px;
+    position: relative;
+    display: block;
+    padding: 20px;
+    background: #f5e6cc;
+    color: #ada59b;
+    top: 230px;
+    transition: .3s;
+    opacity: 0;
+    resize: none;
+}
+
+.new-note.new-note--active .info {
+    top: -230px;
+    opacity: 0;
+}
+
+.new-note.new-note--active .note-area {
+    top: -85px;
+    opacity: 1;
+}

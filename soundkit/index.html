@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Soundboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+    <h1 class="header-text russo-font"> 🔊 SoundBoard 🔊</h1>
+</header>
+
+<section class="content">
+    <div class="soundboard">
+        <div class="sound-button sound-button--first" data-key="81">Q</div>
+        <div class="sound-button sound-button--second" data-key="87">W</div>
+        <div class="sound-button sound-button--third" data-key="69">E</div>
+
+        <div class="sound-button sound-button--fourth" data-key="65">A</div>
+        <div class="sound-button sound-button--fifth" data-key="83">S</div>
+        <div class="sound-button sound-button--sixth" data-key="68">D</div>
+
+        <div class="sound-button sound-button--seventh" data-key="90">Z</div>
+        <div class="sound-button sound-button--eigth" data-key="88">X</div>
+        <div class="sound-button sound-button--ninth" data-key="67">C</div>
+
+        <audio class="kick" src="./assets/kick.wav"></audio>
+        <audio class="snare" src="./assets/snare.wav"></audio>
+        <audio class="hihat" src="./assets/hihat.wav"></audio>
+        <audio class="openhat" src="./assets/openhat.wav"></audio>
+        <audio class="clap" src="./assets/clap.wav"></audio>
+        <audio class="boom" src="./assets/boom.wav"></audio>
+        <audio class="ride" src="./assets/ride.wav"></audio>
+        <audio class="tom" src="./assets/tom.wav"></audio>
+        <audio class="tink" src="./assets/tink.wav"></audio>
+    </div>
+</section>
+
+<section class="media-container">
+<div class="buttons">
+    <button class="record">Nagrywaj</button>
+    <button class="stop">Stop</button>
+
+    <label for="bps">Kanał</label>
+    <select name="bps" class="bps" id="bps">
+        <option value="128000">128000</option>
+        <option value="100000">100000</option>
+        <option value="60000">60000</option>
+        <option value="10000">10000</option>
+    </select>
+</div>
+    <div class="audio-list"></div>
+</section>
+
+<script src="js/Soundkit.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
